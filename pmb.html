@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PMB | Randika</title>
+</head>
+
+<body>
+    <h2 
+    style=
+    "text-align: center;
+    margin-bottom: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    ">DATA FORM PMB</h2>
+    <form action="simpanktp.php" method="POST" autocomplete="on">
+        <fieldset>
+            <legend>INPUT DATA MAHASISWA</legend>
+            <fieldset>
+                <legend>Data Diri</legend>
+                <label for="nama"> Nama </label><br>
+                <input 
+                    type="text" 
+                    id="nama" 
+                    name="nama" 
+                    placeholder="Masukan Nama Anda" 
+                    required
+                    autofocus
+                >
+                <br><br>
+                <label for="nik"> NIK :</label><br>
+                <input 
+                    type="number" 
+                    id="nik" 
+                    name="nik" 
+                    placeholder="Masukan NIK Anda"  
+                    required
+                >
+                <br><br>
+                
+                <label for="tempat_lahir"> Tempat Lahir </label><br>
+                <input 
+                    type="text" 
+                    id="tempat_lahir" 
+                    name="tempat_lahir" 
+                    maxlength="35" 
+                    placeholder="Masukan Tempat Lahir Anda"
+                    required>
+                <br><br>
+                <label for="tanggal_lahir" > Tanggal Lahir </label><br>
+                <input 
+                    type="date" 
+                    id="tanggal_lahir" 
+                    name="tanggal_lahir" 
+                    placeholder="Masukan Tanggal Lahir Anda"
+                    required>
+                <br><br>
+
+                <label for="jenis_kelamin">Jenis Kelamin :</label> <br>
+                <input 
+                    type="radio" 
+                    id="jenis_kelamin" 
+                    name="jenis_kelamin" 
+                    value="Lakilaki" 
+                    required> Laki-laki
+                <input 
+                    type="radio" 
+                    id="jenis_kelamin" 
+                    name="jenis_kelamin" 
+                    value="Perempuan" 
+                    required> Perempuan
+
+                <br><br>
+
+                <label for="noHp">Masukan No Tlp/WA :</label> <br>
+                <input 
+                    type="number" 
+                    name="noHp" 
+                    id="noHp" 
+                    maxlength="12"
+                    placeholder="Masukan no Handphone"
+                    required
+                > <br><br>
+
+                <label for="email">Masukan Email :</label> <br>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email"
+                    placeholder="Masukan Email Anda"
+                    required
+                > <br><br>
+
+                <label for="agama">Pilih Agama Anda :</label><br>
+                <input type="radio" name="agama" id="Islam" required>Islam
+                <input type="radio" name="agama" id="Kristen">Kristen
+                <input type="radio" name="agama" id="Budha">Budha
+                <input type="radio" name="agama" id="Hindu">Hindu
+                <input type="radio" name="agama" id="Protestan">Protestan
+                <input type="radio" name="agama" id="Konghucu">Konghucu
+                <br><br>
+
+                <label for="prodi">Prodi Jurusan</label> <br>
+                <select name="prodi" id="prodi" required>
+                    <option value=""> -- Pilih Program Studi --</option>
+                    <option value="prodi">S1 Pendidikan Bahasa Inggris (PBI)</option>
+                    <option value="prodi">S1 Pendidikan Guru Sekolah Dasar (PGSD)</option>
+                    <option value="prodi">S1 Manajemen</option>
+                    <option value="prodi">S1 Akuntansi</option>
+                    <option value="prodi">S1 Teknik Sipil</option>
+                    <option value="prodi">S1 Teknik Informatika</option>
+                    <option value="prodi">S1 Farmasi</option>
+                    <option value="prodi">S1 Peternakan</option>
+                    <option value="prodi">S1 Agribisnis</option>
+                    <option value="prodi">S1 Agroteknologi</option>
+                </select> <br><br>
+
+                <label for="foto">Pas Foto Terbaru</label> <br>
+                <input type="file" name="foto" id="foto" accept="image/png, image/jpeg, image/jpg" > <br><br>
+
+                <label for="alamat">Alamat Lengkap :</label> <br>
+                <textarea 
+                    name="alamat" 
+                    rows="5" 
+                    cols="30" 
+                    id="alamat"
+                    placeholder="Masukan alamat anda"
+                    required
+                ></textarea> <br><br>
+            </fieldset> <br><br><br>
+                <fieldset>
+                    <legend>Data Orang Tua</legend>
+                    <label for="namaAyah"> Nama Orang Tua/Wali</label><br>
+                    <input 
+                        type="text" 
+                        id="namaAyah" 
+                        name="namaAyah" 
+                        placeholder="Masukan Nama Anda" 
+                        required
+                    > <br><br>
+                    <label for="namaIbu"> Nama Ibu</label><br>
+                    <input 
+                        type="text" 
+                        id="namaIbu" 
+                        name="namaIbu" 
+                        placeholder="Masukan Ibu Anda" 
+                        required
+                    > <br><br>
+
+                    <label for="pekerjaanWali">Pekerjaan Wali</label><br>
+                    <select name="pekerjaanWali" id="pekerjaanWali">
+                        <option value="">-- Pilih Pekerjaan --</option>
+                        <option value="pekerjaanWali">Wiraswasta</option>
+                        <option value="pekerjaanWali">Pegawai Negri</option>
+                        <option value="pekerjaanWali">Wirausaha</option>
+                        <option value="pekerjaanWali">Buruh Tani</option>
+                        <option value="pekerjaanWali">Petani</option>
+                        <option value="pekerjaanWali">Guru</option>
+                        <option value="pekerjaanWali">Lainnya</option>
+                    </select> <br><br>
+                    
+                    <label for="pekerjaanIbu">Pekerjaan Ibu</label><br>
+                    <select name="pekerjaanIbu" id="pekerjaanIbu">
+                        <option value="">-- Pilih Pekerjaan --</option>
+                        <option value="pekerjaanIbu">Wiraswasta</option>
+                        <option value="pekerjaanIbu">Pegawai Negri</option>
+                        <option value="pekerjaanIbu">Wirausaha</option>
+                        <option value="pekerjaanIbu">Buruh Tani</option>
+                        <option value="pekerjaanIbu">Petani</option>
+                        <option value="pekerjaanIbu">Guru</option>
+                        <option value="pekerjaanIbu">Lainnya</option>
+                    </select> <br><br>
+
+                    <label for="pendidikanAYah">Pendidikan Terakhir Ayah</label><br>
+                    <select name="pendidikanAYah" id="pendidikanAYah">
+                        <option value="">-- Pilih Pendidikan --</option>
+                        <option value="pendidikanAYah">Sd</option>
+                        <option value="pendidikanAYah">SMP</option>
+                        <option value="pendidikanAYah">SMA</option>
+                        <option value="pendidikanAYah">S1</option>
+                        <option value="pendidikanAYah">S2</option>
+                        <option value="pendidikanAYah">S3</option>
+                        <option value="pendidikanAYah">D3</option>
+                        <option value="pendidikanAYah">D4</option>
+                    </select> <br><br>
+
+                    <label for="penghasilanOrtu">Penghasilan Orang Tua/Wali</label><br>
+                    <select name="penghasilanOrtu" id="penghasilanOrtu">
+                        <option value="">-- Pilih Penghasilan --</option>
+                        <option value="dibawah_3juta">Di bawah Rp 3 juta</option>
+                        <option value="3juta_5juta">Rp 3 juta - Rp 5 juta</option>
+                        <option value="5juta_10juta">Rp 5 juta - Rp 10 juta</option>
+                        <option value="10juta_15juta">Rp 10 juta - Rp 15 juta</option>
+                        <option value="diatas_15juta">Di atas Rp 15 juta</option>
+                    </select> <br><br>
+
+
+                    <label for="noHpWali">Masukan No Tlp Wali :</label> <br>
+                <input 
+                    type="number" 
+                    name="noHpWali" 
+                    id="noHpWali" 
+                    maxlength="12"
+                    placeholder="Masukan no Handphone"
+                    required
+                > <br><br>
+
+                <label for="alamatWali">Alamat Lengkap :</label> <br>
+                <textarea 
+                    name="alamatWali" 
+                    rows="5" 
+                    cols="30" 
+                    id="alamatWali"
+                    placeholder="Masukan Alamat Orang Tua/Wali anda"
+                    required
+                ></textarea> <br><br>
+                </fieldset>
+                <br><br>
+             
+            <input type="reset" value="Reset" style="border-radius: 4px;">
+            <input type="submit" value="Simpan" style="background-color: rgb(14, 14, 220); color: aliceblue; border-radius: 4px;">
+            
+
+        </fieldset>
+    </form>
+</body>
+
+</html>

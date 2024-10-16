@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h2>HTML FORM</h2>
+    <form action="simpanktp.php" method="POST" autocomplete="on">
+        <fieldset>
+            <legend>INPUT DATA KTP</legend>
+            <label for="nik"> NIK :</label><br>
+            <input 
+                type="number"
+                id="nik" 
+                name="nik" 
+                placeholder="Masukan NIK Anda"
+                autofocus
+                required
+            >
+                
+            <br><br>
+
+            <label for="nama"> Nama </label><br>
+            <input 
+                type="text" 
+                id="nama" 
+                name="nama" 
+                placeholder="Masukan Nama Anda"
+                required>
+            <br><br>
+
+            <label for="tempat_lahir"> Tempat Lahir </label><br>
+            <input 
+                type="text" 
+                id="tempat_lahir" 
+                name="tempat_lahir" 
+                maxlength="35" 
+                placeholder="Masukan Tempat Lahir Anda"
+                required>
+            <br><br>
+
+            
+            <label for="tanggal_lahir" > Tempat Lahir </label><br>
+            <input 
+                type="date" 
+                id="tanggal_lahir" 
+                name="tanggal_lahir" 
+                placeholder="Masukan Tanggal Lahir Anda"
+                required>
+            <br><br>
+            <label for="jenis_kelamin">Jenis Kelamin :</label> <br>
+            <input 
+                type="radio" 
+                id="jenis_kelamin" 
+                name="jenis_kelamin" 
+                value="Lakilaki" 
+                required> Laki-laki
+            <input 
+                type="radio" 
+                id="jenis_kelamin" 
+                name="jenis_kelamin" 
+                value="Perempuan" 
+                required> Perempuan
+
+            <br><br>
+
+
+            <label for="gol_darah"> Gol darah:</label><br>
+            <select id="gol_darah" name="gol_darah" required>
+                <option value="" >-- Pilih Gol darah --</option>
+                <option value="A"> A </option>
+                <option value="O"> O </option>
+                <option value="B"> B </option>
+                <option value="AB"> AB </option>
+            </select> <br><br>
+
+
+            <label for="alamat"> Alamat :</label><br>
+            <textarea 
+                id="alamat" 
+                name="alamat" 
+                rows="4" cols="20" 
+                placeholder="Masukan  Alamat"
+                required></textarea>
+            <br><br>
+
+            <label for="rtrw"> RT/RW :</label><br>
+            <input 
+                type="text" 
+                id="rtrw" 
+                name="rtrw" 
+                placeholder="Masukan RT/RW Anda"
+                required>
+            <br><br>
+
+            <label for="keldesa"> Kel/Desa :</label><br>
+            <input 
+                type="text" 
+                id="keldesa" 
+                name="keldesa" 
+                placeholder="Masukan Kelurahan/Desa Anda"
+                required>
+            <br><br>
+
+            <label for="kecamatan"> Kecamatan :</label><br>
+            <input 
+                type="text" 
+                id="kecamatan" 
+                name="kecamatan" 
+                placeholder="Masukan Kecamatan Anda"
+                required>
+            <br><br>
+
+            <label for="provinsi">Provinsi :</label> <br>
+            <input 
+                type="text" 
+                name="provinsi" 
+                id="provinsi" 
+                placeholder="Masukan Provinsi Anda"
+                required>
+            <br><br>
+
+            <label for="agama">Pilih Agama Anda :</label><br>
+            <input type="radio" name="agama" id="Islam" required>Islam
+            <input type="radio" name="agama" id="Kristen">Kristen
+            <input type="radio" name="agama" id="Budha">Budha
+            <input type="radio" name="agama" id="Hindu">Hindu
+            <br><br>
+
+            <label for="nikah">Status Pernikahan :</label> <br>
+            <select name="nikah" id="nikah" required>
+                <option value="">-- Pilih Status --</option>
+                <option value="nikah">Nikah</option>
+                <option value="nikah">Belum Menikah</option>
+                <option value="nikah">Cerai Hidup</option>
+                <option value="nikah">Cerai Mati</option>
+            </select><br><br>
+
+            <label for="pekerjaan">Pekerjaan :</label> <br>
+            <input 
+                type="text" 
+                name="pekerjaan" 
+                id="pekerjaan" 
+                list="dataKerja"
+                required>
+
+            <!-- Untuk Melengkapi DataList Kerja -->
+            <datalist id="dataKerja">
+                <option value="TNI">
+                <option value="POLRI">
+                <option value="PNS">
+                <option value="Wiraswasta">
+                <option value="Guru">
+                <option value="Dosen">
+                <option value="Buruh">
+                <option value="Petani">
+                <option value="Lainnya">
+            </datalist> <br> <br>
+
+            <label for="berlaku">Berlaku Hingga :</label><br>
+            <select name="berlaku" id="berlaku" required>
+                <option value="">--- Pilihan ---</option>
+                <option value="">Seumur Hidup</option>
+            </select>
+            
+            
+            
+            <br><br>
+
+
+            <label for="foto">Masukan Foto Anda :</label> <br>
+            <input 
+                type="file" 
+                name="foto" 
+                id="foto" 
+                accept="image/png, image/jpeg, image/jpg" 
+                required
+            >
+            <br><br>
+            <label for="dibuat">Tanggal Di Buat :</label><br>
+            <input type="date" required>
+
+
+
+
+
+
+
+            <br><br>
+            <input type="reset" value="Reset">
+            <input type="submit" value="Simpan">
+        </fieldset>
+    </form>
+</body>
+
+</html>
